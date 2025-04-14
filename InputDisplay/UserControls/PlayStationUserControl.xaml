@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="InputDisplay.UserControls.PlayStationUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InputDisplay.UserControls"
+             xmlns:viewModels="clr-namespace:InputDisplay.ViewModels"
+             mc:Ignorable="d"
+             d:DataContext="{d:DesignInstance viewModels:GamepadViewModel}"
+             d:DesignHeight="290" d:DesignWidth="400">
+    <Grid>
+        <Canvas Background="Purple">
+            <Image Canvas.Top="0" Name="imgGamepad" Width="400" Source="/Images/Ps4/Gamepad.png" />
+
+            <Image Width="22" Source="/Images/Ps4/Button-Viereck.png" Visibility="{Binding PlayStationButtons[0].ButtonVisibility}" Canvas.Left="285" Canvas.Top="98" />
+            <Image Width="23" Source="/Images/Ps4/Button-X.png" Visibility="{Binding PlayStationButtons[1].ButtonVisibility}" Canvas.Left="314" Canvas.Top="127" />
+            <Image Width="26" Source="/Images/Ps4/Button-Kreis.png" Visibility="{Binding PlayStationButtons[2].ButtonVisibility}" Canvas.Left="342" Canvas.Top="96" />
+            <Image Width="25" Source="/Images/Ps4/Button-Dreieck.png" Visibility="{Binding PlayStationButtons[3].ButtonVisibility}" Canvas.Left="313" Canvas.Top="67" />
+
+            <Image Width="52" Source="/Images/Ps4/L1.png" Visibility="{Binding PlayStationButtons[4].ButtonVisibility}" Canvas.Left="51" Canvas.Top="34" />
+            <Image Width="52" Source="/Images/Ps4/R1.png" Visibility="{Binding PlayStationButtons[5].ButtonVisibility}" Canvas.Left="297" Canvas.Top="34" />
+            <Image Width="52" Source="/Images/Ps4/L2.png" Visibility="{Binding PlayStationButtons[6].ButtonVisibility}" Canvas.Left="52" Canvas.Top="-1" />
+            <Image Width="52" Source="/Images/Ps4/R2.png" Visibility="{Binding PlayStationButtons[7].ButtonVisibility}" Canvas.Left="297" Canvas.Top="-1" />
+
+            <Image Width="14" Source="/Images/Ps4/Share.png" Visibility="{Binding PlayStationButtons[8].ButtonVisibility}" Canvas.Left="111" Canvas.Top="57" />
+            <Image Width="14" Source="/Images/Ps4/Share.png" Visibility="{Binding PlayStationButtons[9].ButtonVisibility}" Canvas.Left="275" Canvas.Top="57" />
+
+            <Image Width="19" Source="/Images/Ps4/D-Up.png" Visibility="{Binding PlayStationButtons[12].ButtonVisibility}" Canvas.Left="65" Canvas.Top="78" />
+            <Image Height="19" Source="/Images/Ps4/D-Right.png" Visibility="{Binding PlayStationButtons[13].ButtonVisibility}" Canvas.Left="82" Canvas.Top="99" />
+            <Image Width="19" Source="/Images/Ps4/D-Down.png" Visibility="{Binding PlayStationButtons[14].ButtonVisibility}" Canvas.Left="65" Canvas.Top="116" />
+            <Image Height="19" Source="/Images/Ps4/D-Left.png" Visibility="{Binding PlayStationButtons[15].ButtonVisibility}" Canvas.Left="43" Canvas.Top="99" />
+
+            <Grid Canvas.Left="{Binding PlayStationSticks[0].PosX}" Canvas.Top="{Binding PlayStationSticks[0].PosY}">
+                <Image Width="49" Source="/Images/Ps4/Stick.png" />
+                <Image Width="45" Source="/Images/Ps4/Trigger.png" Visibility="{Binding PlayStationButtons[10].ButtonVisibility}" />
+            </Grid>
+            <Grid Canvas.Left="{Binding PlayStationSticks[1].PosX}" Canvas.Top="{Binding PlayStationSticks[1].PosY}">
+                <Image Width="49" Source="/Images/Ps4/Stick.png" />
+                <Image Width="45" Source="/Images/Ps4/Trigger.png" Visibility="{Binding PlayStationButtons[11].ButtonVisibility}" />
+            </Grid>
+        </Canvas>
+    </Grid>
+</UserControl>

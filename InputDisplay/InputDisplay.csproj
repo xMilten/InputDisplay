@@ -1,0 +1,132 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Ps4\Button-Dreieck.png" />
+    <None Remove="Images\Ps4\Button-Kreis.png" />
+    <None Remove="Images\Ps4\Button-Viereck.png" />
+    <None Remove="Images\Ps4\Button-X.png" />
+    <None Remove="Images\Ps4\D-Down.png" />
+    <None Remove="Images\Ps4\D-Left.png" />
+    <None Remove="Images\Ps4\D-Right.png" />
+    <None Remove="Images\Ps4\D-Up.png" />
+    <None Remove="Images\Ps4\Gamepad.png" />
+    <None Remove="Images\Ps4\L1.png" />
+    <None Remove="Images\Ps4\L2.png" />
+    <None Remove="Images\Ps4\R1.png" />
+    <None Remove="Images\Ps4\R2.png" />
+    <None Remove="Images\Ps4\Share.png" />
+    <None Remove="Images\Ps4\Stick.png" />
+    <None Remove="Images\Ps4\Trigger.png" />
+    <None Remove="Images\Snes\Blue.png" />
+    <None Remove="Images\Snes\Down.png" />
+    <None Remove="Images\Snes\Green.png" />
+    <None Remove="Images\Snes\L.png" />
+    <None Remove="Images\Snes\Left.png" />
+    <None Remove="Images\Snes\R.png" />
+    <None Remove="Images\Snes\Red.png" />
+    <None Remove="Images\Snes\Right.png" />
+    <None Remove="Images\Snes\snes-controller.png" />
+    <None Remove="Images\Snes\Start.png" />
+    <None Remove="Images\Snes\Up.png" />
+    <None Remove="Images\Snes\Yellow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SharpDX.DirectInput" Version="4.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Ps4\Button-Dreieck.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\Button-Kreis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\Button-Viereck.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\Button-X.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\D-Down.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\D-Left.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\D-Right.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\D-Up.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\Gamepad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\L1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\L2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\R1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\R2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\Share.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\Stick.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ps4\Trigger.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\Blue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\Down.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\Green.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\L.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\Left.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\R.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\Red.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\Right.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\snes-controller.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\Start.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\Up.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Snes\Yellow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

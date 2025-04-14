@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="InputDisplay.UserControls.SnesUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InputDisplay.UserControls"
+             xmlns:viewModels="clr-namespace:InputDisplay.ViewModels"
+             mc:Ignorable="d"
+             d:DataContext="{d:DesignInstance viewModels:GamepadViewModel}"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Canvas>
+            <Image Name="imgController" Width="400" Source="/Images/Snes/snes-controller.png" Canvas.Top="0"></Image>
+
+            <Image Width="30" Source="/Images/Snes/Green.png" Visibility="{Binding GamepadButtons[0]}" Canvas.Left="261" Canvas.Top="77"></Image>
+            <Image Width="30" Source="/Images/Snes/Yellow.png" Visibility="{Binding GamepadButtons[1]}" Canvas.Left="298" Canvas.Top="106"></Image>
+            <Image Width="30" Source="/Images/Snes/Red.png" Visibility="{Binding GamepadButtons[2]}" Canvas.Left="336" Canvas.Top="77"></Image>
+            <Image Width="30" Source="/Images/Snes/Blue.png" Visibility="{Binding GamepadButtons[3]}" Canvas.Left="298" Canvas.Top="48"></Image>
+
+            <Image Width="88" Source="/Images/Snes/L.png" Visibility="{Binding GamepadButtons[4]}" Canvas.Left="45" Canvas.Top="2"></Image>
+            <Image Width="88" Source="/Images/Snes/R.png" Visibility="{Binding GamepadButtons[5]}" Canvas.Left="269" Canvas.Top="2"></Image>
+
+            <Image Width="28" Source="/Images/Snes/Start.png" Visibility="{Binding GamepadButtons[8]}" Canvas.Left="150" Canvas.Top="92"></Image>
+            <Image Width="28" Source="/Images/Snes/Start.png" Visibility="{Binding GamepadButtons[9]}" Canvas.Left="193" Canvas.Top="92"></Image>
+
+            <Image Width="22" Source="/Images/Snes/Up.png" Visibility="{Binding GamepadButtons[12]}" Canvas.Left="76" Canvas.Top="60"></Image>
+            <Image Width="22" Source="/Images/Snes/Right.png" Visibility="{Binding GamepadButtons[13]}" Canvas.Left="97" Canvas.Top="82"></Image>
+            <Image Width="22" Source="/Images/Snes/Down.png" Visibility="{Binding GamepadButtons[14]}" Canvas.Left="75" Canvas.Top="103"></Image>
+            <Image Width="22" Source="/Images/Snes/Left.png" Visibility="{Binding GamepadButtons[15]}" Canvas.Left="53" Canvas.Top="81"></Image>
+
+            <Label Canvas.Bottom="0" Content="{Binding Buttons}" />
+        </Canvas>
+    </Grid>
+</UserControl>
